@@ -1,0 +1,160 @@
+body {
+    padding:0%;
+    margin:0%;
+    box-sizing: border-box;
+}
+
+nav{
+    position:fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(255, 205, 236);
+    color: white;
+    height: 15%;
+    width: 100%;
+    font-size: 1rem;
+    z-index:1;
+}
+
+nav li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0.5rem 0.5rem;
+    
+}
+
+nav li:hover{
+    color:rgb(173, 247, 255);
+    cursor:pointer;
+}
+
+#fotonav{
+    margin-left: 2.5rem;
+}
+
+#fotonav img{
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    padding: 0.5rem 0.5rem;
+}
+
+.barrabusqueda{
+    padding: 0.5rem 0.5rem;
+}
+
+.busqueda{
+    border-radius: 30%;
+    background-color: rgb(255, 205, 236);
+    cursor: pointer;
+}
+
+.busqueda:hover{
+    background-color: rgb(173, 247, 255);
+    transition: background-color 0.3s, transform 0.2s;
+    transform: scale(1.05);
+}
+
+.videoloop{
+    margin-top: 5%;
+    width:100%;
+    background-image: linear-gradient( white, rgb(173, 247, 255), white);
+    text-align: center;
+}
+
+.videoloop video{
+    height:65vh;
+    object-fit: cover;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.galeriadestacados h1{
+    text-align:start;
+}
+
+.galeriadestacados {
+    padding: 2rem;
+    background-image: linear-gradient(rgb(255, 205, 236), white);
+    text-align: center;
+}
+
+.galeriadestacados h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.destacados {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    justify-items: center; 
+}
+
+.cuadrodestacados {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+}
+
+.fotoproducto {
+    width: 100%;
+    height: 150px;
+    object-fit:scale-down;
+    border-bottom: 1px solid #ddd;
+}
+
+.nombreproducto {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.precioproducto {
+    font-size: 1rem;
+    color: #666;
+    margin: 0.5rem 0;
+}
+
+.botoncompra {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(255, 205, 236);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 1rem 0;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.botoncompra:hover {
+    background-color: rgb(173, 247, 255);
+    transform: scale(1.05);
+    cursor: url(../img/paw-outline.svg), auto;
+}
+
+.cuadrodestacados:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.productosespecies {
+
+}
+
+.productosespecies h2{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
