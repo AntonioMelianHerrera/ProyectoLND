@@ -10,7 +10,7 @@ nav{
     align-items: center;
     justify-content: space-around;
     background-color: rgb(255, 205, 236);
-    color: white;
+    color: rgb(151, 12, 86);
     height: 15%;
     width: 100%;
     font-size: 1rem;
@@ -82,7 +82,7 @@ nav li:hover{
 .galeriadestacados h2 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
-    color: #333;
+    color: rgb(151, 12, 86);
 }
 
 .destacados {
@@ -111,13 +111,13 @@ nav li:hover{
     border-bottom: 1px solid #ddd;
 }
 
-.nombreproducto {
+.nombredestacado{
     font-size: 1.2rem;
     margin: 0.5rem 0;
-    color: #333;
+    color: rgb(151, 12, 86);
 }
 
-.precioproducto {
+.preciodestacado {
     font-size: 1rem;
     color: #666;
     margin: 0.5rem 0;
@@ -140,7 +140,6 @@ nav li:hover{
 .botoncompra:hover {
     background-color: rgb(173, 247, 255);
     transform: scale(1.05);
-    cursor: url(../img/paw-outline.svg), auto;
 }
 
 .cuadrodestacados:hover {
@@ -148,13 +147,42 @@ nav li:hover{
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-.productosespecies {
-
-}
-
 .productosespecies h2{
     font-size: 2rem;
     margin-bottom: 1.5rem;
+    text-align: center;
     color: #333;
 }
 
+.botoncomprasmall {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(255, 205, 236);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 1rem 0;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.cuadroproductos {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+}
+
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:0, 2, 0, 2%;
+}
