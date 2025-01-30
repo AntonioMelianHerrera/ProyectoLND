@@ -20,7 +20,7 @@ nav{
 nav li{
     list-style-type: none;
     display: inline-block;
-    padding: 0.5rem 0.5rem;
+    padding: 0.5rem 0.4rem;
     
 }
 
@@ -154,20 +154,6 @@ nav li:hover{
     color: #333;
 }
 
-.botoncomprasmall {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-    font-weight: bold;
-    color: white;
-    background-color: rgb(255, 205, 236);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 1rem 0;
-    transition: background-color 0.3s, transform 0.2s;
-}
-
 .cuadroproductos {
     background-color: white;
     border: 1px solid #ddd;
@@ -195,6 +181,49 @@ nav li:hover{
 }
 
 .selector{
-    width:24.7%;
+    width:23%;
     font-size: 1.3rem;
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(255, 205, 236);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.selector:hover {
+    transform: scale(1.05);
+}
+
+#perros{
+background-color: #da5353;
+}
+#perros:hover {
+    background-color: rgb(173, 247, 255);
+}
+
+#gatos{
+    background-color: rgb(83, 243, 139);
+}
+#gatos:hover {
+    background-color: rgb(173, 247, 255);
+}
+
+#otros{
+    background-color: #b35cdb;
+}
+#otros:hover {
+    background-color: rgb(173, 247, 255);
+}
+
+#peces{
+background-color: rgb(84, 128, 216);
+}
+#peces:hover {
+    background-color: rgb(173, 247, 255);
+}
+
+.Sperros button{
+    background-color: #da5353;
 }
