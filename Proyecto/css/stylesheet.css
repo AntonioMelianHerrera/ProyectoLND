@@ -123,7 +123,7 @@ nav li:hover{
     margin: 0.5rem 0;
 }
 
-.botoncompra {
+.botoncompraD {
     display: inline-block;
     padding: 0.5rem 1rem;
     font-size: 1rem;
@@ -137,7 +137,25 @@ nav li:hover{
     transition: background-color 0.3s, transform 0.2s;
 }
 
+.botoncompra {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 1rem 0;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
 .botoncompra:hover {
+    background-color: rgb(173, 247, 255);
+    transform: scale(1.05);
+}
+
+.botoncompraD:hover {
     background-color: rgb(173, 247, 255);
     transform: scale(1.05);
 }
@@ -220,10 +238,43 @@ background-color: #da5353;
 #peces{
 background-color: rgb(84, 128, 216);
 }
+
 #peces:hover {
     background-color: rgb(173, 247, 255);
 }
 
-.Sperros button{
+#Sperro button{
     background-color: #da5353;
+}
+
+#Sgato button{
+    background-color: rgb(83, 243, 139);
+}
+
+#Sotros button{
+    background-color: #b35cdb;
+}
+
+#Speces button{
+    background-color: rgb(84, 128, 216);
+}
+
+#Sperro button:hover{
+    background-color: rgb(173, 247, 255);
+}
+
+#Sgato button:hover{
+    background-color: rgb(173, 247, 255);
+}
+
+#Sotros button:hover{
+    background-color: rgb(173, 247, 255);
+}
+
+#Speces button:hover{
+    background-color: rgb(173, 247, 255);
+}
+
+#ocultar{
+    display:none;
 }
