@@ -20,6 +20,10 @@ nav{
     z-index:1;
 }
 
+nav a{
+    color: rgb(151, 12, 86);
+}
+
 nav li{
     list-style-type: none;
     display: inline-block;
@@ -27,8 +31,13 @@ nav li{
     
 }
 
+nav a:hover{
+    color:rgb(76, 6, 43);
+    cursor:pointer;
+}
+
 nav li:hover{
-    color:rgb(173, 247, 255);
+    color:rgb(76, 6, 43);
     cursor:pointer;
 }
 
@@ -45,6 +54,9 @@ nav li:hover{
 
 .barrabusqueda{
     padding: 0.5rem 0.5rem;
+    background-color: white;
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    border-radius: 10px;
 }
 
 .busqueda{
@@ -70,6 +82,7 @@ nav li:hover{
     height:65vh;
     object-fit: cover;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 .galeriadestacados h1{
@@ -186,8 +199,8 @@ nav li:hover{
 }
 
 .imagen {
-    width:50%;
-    height:50%;
+    width:40%;
+    height:40%;
 }   
 
 .productos{
@@ -195,6 +208,10 @@ nav li:hover{
     grid-template-columns: repeat(5, 1fr);
     color: rgb(151, 12, 86);
     padding-bottom: 10px;
+}
+
+.productosespecies h2{
+    color: rgb(151, 12, 86);
 }
 
 .botones{
@@ -282,8 +299,42 @@ background-color: rgb(84, 128, 216);
     background-color: rgb(173, 247, 255);
 }
 
-#ocultar{
-    display:non;
+#Sperro{
+    background-image: linear-gradient( white,#da5353, white);
+}
+
+#Sgato{
+    background-image: linear-gradient( white, rgb(83, 243, 139), white);  
+}
+
+#Sotros{
+    background-image: linear-gradient( white, #b35cdb, white);
+}
+
+#Speces{
+    background-image: linear-gradient( white, rgb(84, 128, 216), white);
+}
+
+.oculto {
+    display: none;
+}
+
+.peluqueria h2{
+    color: rgb(151, 12, 86);
+}
+
+.peluqueria{
+    margin-top: 5%;
+    width:100%;
+    background-image: linear-gradient( white, rgb(173, 247, 255), white);
+    text-align: center;
+}
+
+.peluqueria img{
+    height:65vh;
+    object-fit: cover;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 footer{

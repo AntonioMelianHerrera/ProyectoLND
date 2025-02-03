@@ -23,7 +23,7 @@
                 <button class="busqueda">🔎</button>
             </div>
             <ul>
-                <li>Iniciar sesión</li>
+                <li><a href="login.html">Iniciar sesión</a></li>
                 <li>Carrito</li>
             </ul>
         </nav>
@@ -66,8 +66,8 @@
     <section class="productosespecies">
         <h2>Nuestros productos</h2>
         <div class="botones">
-            <button  onclick="visor('perros')" class="selector" id="perros">Perros</button>
-            <button  onclick="visor('gatos')" class="selector" id="gatos">Gatos</button>
+            <button  onclick="visor('perro')" class="selector" id="perros">Perros</button>
+            <button  onclick="visor('gato')" class="selector" id="gatos">Gatos</button>
             <button  onclick="visor('otros')" class="selector" id="otros">Aves y roedores</button>
             <button  onclick="visor('peces')" class="selector" id="peces">Peces</button>
         </div>
@@ -322,8 +322,13 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="peluqueria">
+            <img src="img/peinado.gif" alt="pelusa">
+        <h2>Servicio de peluquería</h2>
+        <p>¡El mejor servicio para lo mejor de tu casa!</p>
+        <img src="img/corteperro.png" alt="perro">
 
+        <img src="img/bañogato.png" alt="gato">
     </section>
     <hr>
     <footer>
@@ -342,7 +347,17 @@
         </div>
     </footer>
     <script>
-        
+    function visor(seccion) {
+    const secciones = document.querySelectorAll('.productos');
+    secciones.forEach(sec => sec.classList.add('oculto'));
+    const seleccionada = document.getElementById('S' + seccion);
+    if (seleccionada) {
+        seleccionada.classList.remove('oculto');
+    }
+}
+window.onload = function() {
+    visor('perro');
+};
     </script>
 </body>
 </html>
