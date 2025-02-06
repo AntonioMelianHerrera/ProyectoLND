@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;700&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     padding:0%;
     margin:0%;
@@ -85,17 +89,17 @@ nav li:hover{
     border-radius: 10px;
 }
 
-.galeriadestacados h1{
+#galeriadestacados h1{
     text-align:start;
 }
 
-.galeriadestacados {
+#galeriadestacados {
     padding: 2rem;
     background-image: linear-gradient(rgb(255, 205, 236), white);
     text-align: center;
 }
 
-.galeriadestacados h2 {
+#galeriadestacados h2 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
     color: rgb(151, 12, 86);
@@ -181,11 +185,19 @@ nav li:hover{
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-.productosespecies h2{
+#productosespecies h2{
     font-size: 2rem;
     margin-bottom: 1.5rem;
     text-align: center;
-    color: #333;
+    color: rgb(151, 12, 86);
+}
+
+#productosespecies{
+    scroll-margin-top: 100px;
+}
+
+#pelu{
+    scroll-margin-top: 100px;
 }
 
 .cuadroproductos {
@@ -210,9 +222,6 @@ nav li:hover{
     padding-bottom: 10px;
 }
 
-.productosespecies h2{
-    color: rgb(151, 12, 86);
-}
 
 .botones{
     margin-bottom: 10px;
@@ -319,22 +328,64 @@ background-color: rgb(84, 128, 216);
     display: none;
 }
 
-.peluqueria h2{
+#peluqueria h2{
     color: rgb(151, 12, 86);
 }
 
-.peluqueria{
+#peluqueria{
     margin-top: 5%;
     width:100%;
     background-image: linear-gradient( white, rgb(173, 247, 255), white);
     text-align: center;
 }
 
-.peluqueria img{
-    height:65vh;
+#peluqueria img{
+    height:50vh;
     object-fit: cover;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+}
+
+#servicios {
+    width: 30%;
+    margin: 0 auto;
+    padding-left: 50px;
+}
+
+#peluqueria ul {
+    list-style: none;
+    padding: 0;
+}
+
+#peluqueria li {
+    background-image: url('../img/paw-outline.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px;
+}
+
+#animacion {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(151, 12, 86);
+    animation: pulso 1.5s infinite alternate ease-in-out;
+}
+
+@keyframes pulso {
+    0% {
+        transform: scale(1);
+        color: rgb(151, 12, 86);
+    }
+    50% {
+        transform: scale(1.1);
+        color: rgb(255, 80, 120);
+    }
+    100% {
+        transform: scale(1);
+        color: rgb(255, 205, 236);
+    }
 }
 
 footer{

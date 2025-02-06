@@ -13,10 +13,9 @@
                 <img src="img/westydab.png" alt="foto">
             </div>
             <ul>
-                <li>Destacados</li>
-                <li>Nuestros productos</li>
-                <li>Servicio de peluquería</li>
-                <li>Sobre nosotros</li>
+                <li><a href="#galeriadestacados">Destacados</a></li>
+                <li><a href="#productosespecies">Nuestros productos</a></li>
+                <li><a href="#pelu">Servicio de peluquería</a></li>
             </ul>
             <div>
                 <input type="text" placeholder="Buscar..." class="barrabusqueda">
@@ -28,7 +27,7 @@
             </ul>
         </nav>
     </header>
-    <section class="galeriadestacados">
+    <section id="galeriadestacados">
         <h1>Pelusitas</h1>
         <h2>¡Destacados!</h2>
         <div class="destacados">
@@ -63,7 +62,7 @@
             <source src="video/16150372-hd_1920_1080_24fps.mp4">
         </video>
     </div>
-    <section class="productosespecies">
+    <section id="productosespecies">
         <h2>Nuestros productos</h2>
         <div class="botones">
             <button  onclick="visor('perro')" class="selector" id="perros">Perros</button>
@@ -322,13 +321,21 @@
             </div>
         </div>
     </section>
-    <section class="peluqueria">
+    <section id="peluqueria">
             <img src="img/peinado.gif" alt="pelusa">
-        <h2>Servicio de peluquería</h2>
+        <h2 id="pelu">Servicio de peluquería</h2>
         <p>¡El mejor servicio para lo mejor de tu casa!</p>
         <img src="img/corteperro.png" alt="perro">
-
-        <img src="img/bañogato.png" alt="gato">
+        <p>En Pelusitas tenemos a los mejores profesionales para tu mejor amigo, nuestros servicios incluyen:</p>
+        <div id="servicios">
+            <ul>
+                <li>Cortar y peinar el pelaje de tus mascotas.</li>
+                <li>Corte de uñas profesional.</li>
+                <li>Baño integral.</li>
+                <li>Perfumado y acicalamientos adicionales.</li>
+            </ul>
+        </div>
+        <p id="animacion">¡Todo incluído!</p>   
     </section>
     <hr>
     <footer>

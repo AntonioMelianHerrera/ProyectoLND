@@ -89,6 +89,7 @@ body {
 
 .problema a:hover {
     color: rgb(76, 6, 43);
+    cursor:pointer;
 }
 
 .inferior {
@@ -106,4 +107,5 @@ body {
 
 .inferior a:hover {
     color: rgb(76, 6, 43);
+    cursor: pointer;
 }
