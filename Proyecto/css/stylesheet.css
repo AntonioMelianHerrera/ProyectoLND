@@ -371,6 +371,8 @@ background-color: rgb(84, 128, 216);
     margin-top: 10px;
     color: rgb(151, 12, 86);
     animation: pulso 1.5s infinite alternate ease-in-out;
+    overflow: hidden;
+    display: inline-block;
 }
 
 @keyframes pulso {
@@ -391,28 +393,34 @@ background-color: rgb(84, 128, 216);
 footer{
     bottom: 0%;
     width: 100%;
+    display: flex;
+    align-items: center;
   }
   
 .correo{
     text-align: left;
     width: 30%;
-    display: inline-block;
+    justify-content: left;
     padding: 30px;
     font-style: italic; 
     
 }
 .logofooter{
-    text-align: center;
+    justify-content: center;
     width: 33%;
     display: inline-block;
 }
-  
+
 .RRSS{
-    text-align: right;
     width: 30%;
-    display: inline-block;
 }
 
-  .RRSS img{
-    width: 50px;
+.RRSS i {
+    color: rgb(151, 12, 86);
+    transition: color 0.3s, transform 0.2s;
+}
+
+.RRSS i:hover {
+    transform: scale(1.1);
+    color: rgb(173, 247, 255);
 }
