@@ -402,9 +402,28 @@ footer{
     width: 30%;
     justify-content: left;
     padding: 30px;
-    font-style: italic; 
-    
+    font-style: italic;   
 }
+
+#pedirCita{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(255, 205, 236);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 1rem 0;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#pedirCita:hover{
+    background-color: rgb(173, 247, 255);
+    transform: scale(1.5);
+}
+
 .logofooter{
     justify-content: center;
     width: 33%;
