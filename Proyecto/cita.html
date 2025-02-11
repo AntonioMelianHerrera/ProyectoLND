@@ -2,25 +2,38 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
-        <title> Cita peluquería </title>
-        <link rel="icon" type="image/x-icon" href="img/westydab.png">
+        <title>Solicitar Cita - Peluquería Canina</title>
         <link rel="stylesheet" href="css/cita.css">
-        </script>
     </head>
     <body>
         <div id="contenedor">
             <div id="central">
                 <div id="cita">
-                    <div class="titulo">¡Pide tu cita!</div>
+                    <div class="titulo">¡Solicita tu cita!</div>
                     <form id="formulariocita">
-                        <input type="text" name="Nombre" placeholder="Usuario">
-                        <input type="password" placeholder="Contraseña" name="password">   
-                        <button type="submit" title="Ingresar" name="Ingresar">Iniciar sesión</button>
+                        <input type="text" name="propietario" placeholder="Nombre del propietario" required>
+                        <input type="text" name="nombre_mascota" placeholder="Nombre de la mascota" required>
+                        <input type="email" name="correo" placeholder="Correo electrónico" required>
+                        <input type="tel" name="telefono" placeholder="Teléfono de contacto" pattern="[0-9]{9}" required>
+                        <label for="fecha">Fecha de la cita:</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                        <label for="hora">Hora de la cita:</label>
+                        <input type="time" id="hora" name="hora" required>
+                        <label for="servicios">Servicios solicitados:</label>
+                        <select id="servicios" name="servicios">
+                            <option value="corte">Corte de pelo</option>
+                            <option value="bano">Baño</option>
+                            <option value="uñas">Corte de uñas</option>
+                            <option value="completo">Servicio completo</option>
+                        </select>
+                        <textarea name="comentarios" placeholder="Comentarios o sugerencias" rows="4"></textarea>
+                        <button type="submit" title="Solicitar Cita">Solicitar Cita</button>
                     </form>
                     <div class="inferior"><a href="Proyecto.html">Volver</a></div>
                 </div>   
             </div>
         </div>
-            
     </body>
+</html>
+
 </html>

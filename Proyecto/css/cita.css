@@ -2,18 +2,16 @@
 
 body {
     font-family: 'Fredoka', sans-serif;
-    padding:0%;
-    margin:0%;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    background-color: rgb(255, 205, 236);
+    background: linear-gradient(135deg, rgb(255, 205, 236), white);
 }
 
 #contenedor {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0;
-    padding: 0;
     min-width: 100vw;
     min-height: 100vh;
     width: 100%;
@@ -21,80 +19,73 @@ body {
 }
 
 #central {
-    max-width: 320px;
+    max-width: 400px;
     width: 100%;
 }
 
 .titulo {
-    font-size: 250%;
-    color:rgb(151, 12, 86);
+    font-size: 2rem;
+    color: rgb(151, 12, 86);
     text-align: center;
     margin-bottom: 20px;
 }
 
 #cita {
     width: 100%;
-    padding: 50px 30px;
+    padding: 40px 20px;
     background-color: white;
-    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     text-align: center;
 }
 
-#cita input {
-    font-size: 110%;
-    color: rgb(151, 12, 86)c;
+#cita input,
+#cita select,
+#cita textarea {
+    font-size: 1rem;
+    color: rgb(151, 12, 86);
     display: block;
     width: 100%;
-    height: 40px;
-    margin-bottom: 10px;
-    padding: 5px 5px 5px 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid rgba(151, 12, 86, 0.5);
+    border-radius: 5px;
     box-sizing: border-box;
-    border-radius: 10px;
 }
 
-#cita input::placeholder {
+#cita input::placeholder,
+#cita textarea::placeholder {
     color: rgb(151, 12, 86);
+    opacity: 0.7;
+}
+
+#cita label {
+    font-size: 0.9rem;
+    color: rgb(151, 12, 86);
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    box-sizing: border-box;
 }
 
 #cita button {
-    padding: 0.5rem 1rem;
+    padding: 10px;
     font-size: 1rem;
     font-weight: bold;
     color: white;
-    background-color: rgb(255, 205, 236);
+    background-color: rgb(151, 12, 86);
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin: 1rem 0;
 }
 
 #cita button:hover {
     background-color: rgb(173, 247, 255);
-    cursor:pointer;
-}
-
-.problema {
-    font-size: 90%;
-    text-align: center;    
-    margin-top: 15px;
-}
-
-.problema a {
-    display: block;
-    text-decoration: none;
-    color: rgb(151, 12, 86);
-    margin-bottom: 3px;
-}
-
-.problema a:hover {
-    color: rgb(76, 6, 43);
-    cursor:pointer;
 }
 
 .inferior {
-    margin-top: 10px;
-    font-size: 90%;
+    margin-top: 15px;
+    font-size: 0.9rem;
     text-align: center;
 }
 
@@ -102,10 +93,8 @@ body {
     display: block;
     text-decoration: none;
     color: rgb(151, 12, 86);
-    margin-bottom: 3px;
 }
 
 .inferior a:hover {
     color: rgb(76, 6, 43);
-    cursor: pointer;
 }
