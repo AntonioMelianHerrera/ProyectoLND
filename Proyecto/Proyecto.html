@@ -24,7 +24,7 @@
             </div>
             <ul>
                 <li><a href="login.html">Iniciar sesión</a></li>
-                <li>Carrito(<span id="contadorCarrito">0</span>)</li>
+                <li id="animarCarro">Carrito(<span id="contadorCarrito">0</span>)</li>
             </ul>
         </nav>
     </header>
@@ -58,7 +58,7 @@
         </div>
     </section>
     <div class="videoloop">
-        <video autoplay="true" muted="true" loop="true">
+        <video autoplay muted loop>
             <source src="video/16150372-hd_1920_1080_24fps.mp4">
         </video>
     </div>
@@ -339,7 +339,7 @@
             <p id="animacion">¡Todo incluído!</p> 
         </div> 
         <div>
-            <a href="cita.html"><button id="pedirCita">Pide cita</button></a>
+           <button id="pedirCita" onclick="window.location.href='cita.html';">Pide cita</button>
         </div>
     </section>
     <hr>
@@ -359,23 +359,33 @@
         </div>
     </footer>
     <script>
-        function visor(seccion) {
-        const secciones = document.querySelectorAll('.productos');
-        secciones.forEach(sec => sec.classList.add('oculto'));
-        const seleccionada = document.getElementById('S' + seccion);
-        if (seleccionada) {
-            seleccionada.classList.remove('oculto');
-            }
+        function visor(seccion) 
+        {
+            const secciones = document.querySelectorAll('.productos');
+            secciones.forEach(sec => sec.classList.add('oculto'));
+            const seleccionada = document.getElementById('S' + seccion);
+            if (seleccionada) {
+                seleccionada.classList.remove('oculto');
+                }
         }
-        window.onload = function() {
+        window.onload = function() 
+        {
             visor('perro');
         };
 
         let contador = 0;
-                function agregarAlCarrito() {
-                    contador++;
-                    document.getElementById("contadorCarrito").innerText = contador;
-                }
+        function agregarAlCarrito() 
+        {
+            contador++;
+         document.getElementById("contadorCarrito").innerText = contador;
+
+            const carritoElemento = document.getElementById("contadorCarrito");
+            carritoElemento.classList.add("pulsocompra");
+            setTimeout(() => 
+            {
+            carritoElemento.classList.remove("pulsocompra");
+            }, 500);
+        }
     </script>
 </body>
 </html>

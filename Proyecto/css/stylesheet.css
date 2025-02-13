@@ -398,6 +398,22 @@ background-color: rgb(84, 128, 216);
     }
 }
 
+@keyframes pulsocompra {
+    0% {
+        color: rgb(151, 12, 86);
+    }
+    50% {
+        color: rgb(255, 80, 120);
+    }
+    100% {
+        color: rgb(255, 205, 236);
+    }
+}
+
+.pulsocompra {
+    animation: pulso 0.5s ease;
+}
+
 footer{
     bottom: 0%;
     width: 100%;
@@ -457,4 +473,80 @@ footer{
 .RRSS i:hover {
     transform: scale(1.1);
     color: rgb(173, 247, 255);
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .destacados {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .productos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .videoloop{
+        margin-top: 5%;
+        width:100%;
+        background-image: linear-gradient( white, rgb(173, 247, 255), white);
+        text-align: center;
+    }
+
+    .videoloop video{
+        height:50vh;
+        object-fit: cover;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        border-radius: 50%;
+    }
+
+    .barrabusqueda{
+        display:none
+    }
+    
+    .busqueda{
+        display:none
+    }
+    
+    .busqueda:hover{
+        display:none
+    }
+}
+
+@media (max-width: 768px) {
+    .destacados {
+        grid-template-columns: 1fr;
+    }
+    .productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .videoloop{
+        display:none
+    }
+
+    #peluqueria img{
+        height:20vh;
+        object-fit: cover;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+    }
+
+    .logofooter{
+        display: none
+    }
+    
+    .logofooter img{
+        display: none;
+    }
+
+    .barrabusqueda{
+        display:none
+    }
+    
+    .busqueda{
+        display:none
+    }
+    
+    .busqueda:hover{
+        display:none
+    }
 }
