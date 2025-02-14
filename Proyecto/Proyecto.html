@@ -13,11 +13,14 @@
             <div id="fotonav">
                 <a href="#"><img src="img/pelusitastop.png" alt="foto"></a>
             </div>
-            <ul>
-                <li><a href="#galeriadestacados">Destacados</a></li>
-                <li><a href="#productosespecies">Nuestros productos</a></li>
-                <li><a href="#pelu">Servicio de peluquería</a></li>
-            </ul>
+                <div id="navnt">
+                    <button class="desplegable">≡</button>
+                    <ul>
+                        <li><a href="#galeriadestacados">Destacados</a></li>
+                        <li><a href="#productosespecies">Nuestros productos</a></li>
+                        <li><a href="#pelu">Servicio de peluquería</a></li>
+                    </ul>
+                </div>
             <div>
                 <input type="text" placeholder="Buscar..." class="barrabusqueda">
                 <button class="busqueda">🔎</button>
@@ -386,6 +389,29 @@
             carritoElemento.classList.remove("pulsocompra");
             }, 500);
         }
+
+        function actualizarBotones() {
+            const perros = document.getElementById('perros');
+            const gatos = document.getElementById('gatos');
+            const aves = document.getElementById('otros');
+            const peces = document.getElementById('peces');
+
+            if (window.innerWidth <= 768) {
+                perros.textContent = '🐶';
+                gatos.textContent = '🐱';
+                aves.textContent = '🦜🐹';
+                peces.textContent = '🐠';
+            } else {
+                perros.textContent = 'Perros';
+                gatos.textContent = 'Gatos';
+                aves.textContent = 'Aves y roedores';
+                peces.textContent = 'Peces';
+            }
+        }
+
+        window.addEventListener('resize', actualizarBotones);
+        window.addEventListener('load', actualizarBotones);
+    </script>
     </script>
 </body>
 </html>
