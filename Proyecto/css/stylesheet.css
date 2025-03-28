@@ -335,23 +335,36 @@ background-color: rgb(84, 128, 216);
     display: none;
 }
 
-#peluqueria h2{
-    color: rgb(151, 12, 86);
-    font-size: 3rem;
-}
-
-#peluqueria{
+#peluqueria {
     margin-top: 5%;
-    width:100%;
-    background-image: linear-gradient( white, rgb(173, 247, 255), white);
+    width: 100%;
+    background-image: linear-gradient(white, rgb(173, 247, 255), white);
     text-align: center;
 }
 
-#peluqueria img{
-    height:50vh;
+#peluqueria h2 {
+    color: rgb(151, 12, 86);
+    font-size: 3rem;
+    text-align: center;
+}
+
+#peluqueria .contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+
+#peluqueria img {
+    height: 30vh;
     object-fit: cover;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+}
+
+#peluqueria p {
+    text-align: center;
+    padding: 0 20px;
 }
 
 #servicios {
@@ -383,6 +396,20 @@ background-color: rgb(84, 128, 216);
     display: inline-block;
 }
 
+.RSS {
+    position: fixed;
+    bottom: 18%;
+    left: 16%;
+    margin-left: -15%;
+    width: 30%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 2;
+    display: block;
+}
+
 @keyframes pulso {
     0% {
         transform: scale(1);
@@ -408,6 +435,21 @@ background-color: rgb(84, 128, 216);
     100% {
         color: rgb(255, 205, 236);
     }
+}
+
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 5%;
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgb(151, 12, 86);
+    background-color: transparent;
+    border: none;
+}
+
+.cerrar:hover {
+    color: white;
 }
 
 .pulsocompra {
@@ -534,6 +576,20 @@ footer{
         border-radius: 10px;
     }
 
+    #peluqueria .contenido {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #peluqueria p,
+    .imagen2 {
+        display: none;
+    }
+
+    .imagen1 {
+        width: 80%;
+    }
+
     .logofooter{
         display: none
     }
@@ -598,4 +654,8 @@ footer{
     #fotonav {
     display: none;
     }
+
+    .RSS {
+        display: none;
+      }
 }

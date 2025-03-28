@@ -325,10 +325,12 @@
         </div>
     </section>
     <section id="peluqueria">
-            <img src="img/peinado.gif" alt="pelusa">
         <h2 id="pelu">Servicio de peluquería</h2>
-        <p>¡El mejor servicio para lo mejor de tu casa!</p>
-        <img src="img/corteperro.png" alt="perro">
+        <div class="contenido">
+            <img class="imagen1" src="img/peinado.gif" alt="pelusa">
+            <p>¡El mejor servicio para lo mejor de tu casa!</p>
+            <img class="imagen2" src="img/corteperro.png" alt="perro">
+        </div>
         <p>En Pelusitas tenemos a los mejores profesionales para tu mejor amigo, nuestros servicios incluyen:</p>
         <div id="servicios">
             <ul>
@@ -342,12 +344,13 @@
             <p id="animacion">¡Todo incluído!</p> 
         </div> 
         <div>
-           <button id="pedirCita" onclick="window.location.href='cita.html';">Pide cita</button>
+            <button id="pedirCita" onclick="window.location.href='cita.html';">Pide cita</button>
         </div>
     </section>
     <hr>
     <div class="RSS">
    <!-- start feedwind code --> <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" preloader-text="Loading" data-fw-param="171915/"></script> <!-- end feedwind code -->
+   <span class="cerrar" onclick="ocultarRSS()">×</span>
     </div>
     <footer>
         <div class="correo">
@@ -414,6 +417,10 @@
 
         window.addEventListener('resize', actualizarBotones);
         window.addEventListener('load', actualizarBotones);
+
+        function ocultarRSS() {
+    document.querySelector('.RSS').style.display = 'none';
+}
     </script>
 </body>
 </html>
